@@ -1,0 +1,13 @@
+<div fxLayout="row center" fxLayoutAlign="center">
+  <button mat-button [matMenuTriggerFor]="menu" >Home</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="">The witcher 3</button>
+    <button mat-menu-item>Curiosità</button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="Categoria" >Categoria</button>
+  <mat-menu #Categoria="matMenu">
+    <button mat-menu-item routerLink="/bestie"> Bestie </button>
+    <button mat-menu-item> Necrofagi </button>
+  </mat-menu>
+</div>
